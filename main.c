@@ -4,7 +4,10 @@
 
 #include "main.h"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f8dc2a1829cd50bad7e95cb20cb9fdb422d0f2d9
 /**
 
  * main - Entry point
@@ -27,7 +30,10 @@ int main(void)
 
     void *addr;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f8dc2a1829cd50bad7e95cb20cb9fdb422d0f2d9
     len = _printf("Let's try to printf a simple sentence.\n");
 
     len2 = printf("Let's try to printf a simple sentence.\n");
