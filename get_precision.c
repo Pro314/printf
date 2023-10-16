@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /* Function: get_precision
  * Description: Extracts precision value from the format string and returns it.
