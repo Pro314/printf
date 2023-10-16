@@ -1,5 +1,4 @@
 #include <limits.h>
-<<<<<<< HEAD
 #include <stdio.h>
 #include "main.h"
 
@@ -126,6 +125,3 @@ int main(void)
     return (0);
 
 }
-
-
->>>>>>> 0c690b07a5342da66b126cbd97cb36d7ffb0f24c
