@@ -1,7 +1,14 @@
 #include "main.h"
 
+<<<<<<< HEAD
+
 void print_buffer(char buffer[], int *buff_ind);
 
+
+=======
+void print_buffer(char buffer[], int *buff_ind);
+
+>>>>>>> f8dc2a1829cd50bad7e95cb20cb9fdb422d0f2d9
 /**
 
  * _printf - Printf function
@@ -24,12 +31,23 @@ int _printf(const char *format, ...)
 
 	char buffer[BUFF_SIZE];
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> f8dc2a1829cd50bad7e95cb20cb9fdb422d0f2d9
         if (format == NULL)
 
                 return (-1);
 
+<<<<<<< HEAD
+
         va_start(list, format);
 
+
+=======
+        va_start(list, format);
+
+>>>>>>> f8dc2a1829cd50bad7e95cb20cb9fdb422d0f2d9
         for (i = 0; format && format[i] != '\0'; i++)
 
         {
@@ -80,14 +98,28 @@ int _printf(const char *format, ...)
 
         }
 
+<<<<<<< HEAD
+
+        print_buffer(buffer, &buff_ind);
+
+
+        va_end(list);
+
+
+=======
         print_buffer(buffer, &buff_ind);
 
         va_end(list);
 
+>>>>>>> f8dc2a1829cd50bad7e95cb20cb9fdb422d0f2d9
         return (printed_chars);
 
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> f8dc2a1829cd50bad7e95cb20cb9fdb422d0f2d9
 /**
 
  * print_buffer - Prints the contents of the buffer if it exist
@@ -106,6 +138,10 @@ void print_buffer(char buffer[], int *buff_ind)
 
                 write(1, &buffer[0], *buff_ind);
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> f8dc2a1829cd50bad7e95cb20cb9fdb422d0f2d9
         *buff_ind = 0;
 
 }
