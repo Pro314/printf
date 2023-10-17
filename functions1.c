@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*<<<<<<<<<< PRINT UNSIGNED NUMBER >>>>>>>>>>*/
-/* Function: print_unsigned
+/* Function: print_unsigned.
  * Description: Prints an unsigned long integer to the specified buffer.
  * Parameters:
  *   - types: A variable argument list.
@@ -36,7 +36,7 @@ int print_unsigned(va_list types, char buffer[],
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
-/************* PRINT UNSIGNED NUMBER IN OCTAL  ****************/
+/* PRINT UNSIGNED NUMBER IN OCTAL */
 /* Function: print_octal
  * Description: Prints the octal representation of an unsigned long integer to the specified buffer.
  * Parameters:
@@ -79,12 +79,13 @@ int print_octal(va_list types, char buffer[],
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
-/*<<<<<<<<<< PRINT UNSIGNED NUMBER IN HEXADECIMAL >>>>>>>>>>*/
+/* PRINT UNSIGNED NUMBER IN HEXADECIMAL */
 /* Function: print_hexadecimal
  * Description: Prints the lowercase hexadecimal representation of an unsigned long integer to the specified buffer.
  * Parameters:
  *   - types: A variable argument list.
- *   - buffer: The destination buffer for the printed lowercase hexadecimal representation.
+ *   - buffer: The destination buffer for the printed 
+ *   lowercase hexadecimal representation.
  *   - flags: Flags for formatting.
  *   - width: Width for formatting.
  *   - precision: Precision for formatting.
@@ -100,7 +101,8 @@ int print_hexadecimal(va_list types, char buffer[],
 
 /*<<<<<<<<<< PRINT UNSIGNED NUMBER IN UPPER HEXADECIMAL >>>>>>>>>>*/
 /* Function: print_hexa_upper
- * Description: Prints the uppercase hexadecimal representation of an unsigned long integer to the specified buffer.
+ * Description: Prints the uppercase hexadecimal 
+ * representation of an unsigned long integer to the specified buffer.
  * Parameters:
  *   - types: A variable argument list.
  *   - buffer: The destination buffer for the printed uppercase hexadecimal representation.
@@ -117,9 +119,10 @@ int print_hexa_upper(va_list types, char buffer[],
 		flags, 'X', width, precision, size));
 }
 
-/*<<<<<<<<<< PRINT HEXX NUM IN LOWER OR UPPER >>>>>>>>>>*/
+/* PRINT HEXX NUM IN LOWER OR UPPER */
 /* Function: print_hexa
- * Description: Prints the hexadecimal representation of an unsigned long integer to the specified buffer.
+ * Description: Prints the hexadecimal 
+ * representation of an unsigned long integer to the specified buffer.
  * Parameters:
  *   - types: A variable argument list.
  *   - map_to: Array mapping hexadecimal digits.
