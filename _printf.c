@@ -1,9 +1,14 @@
 #include "main.h"
 
+<<<<<<< HEAD
 
 void print_buffer(char buffer[], int *buff_ind);
 
 
+=======
+void print_buffer(char buffer[], int *buff_ind);
+
+>>>>>>> 20db853892c709a8ab009371106c6528bd84a154
 /**
 
  * _printf - Printf function
@@ -18,6 +23,7 @@ int _printf(const char *format, ...)
 
 {
 
+<<<<<<< HEAD
         int i, printed = 0, printed_chars = 0;
 
         int flags, width, precision, size, buff_ind = 0;
@@ -28,66 +34,87 @@ int _printf(const char *format, ...)
 
 
         if (format == NULL)
+=======
+	int i, printed = 0, printed_chars = 0;
 
-                return (-1);
+	int flags, width, precision, size, buff_ind = 0;
+>>>>>>> 20db853892c709a8ab009371106c6528bd84a154
 
+	va_list list;
 
-        va_start(list, format);
+<<<<<<< HEAD
+=======
+	char buffer[BUFF_SIZE];
+>>>>>>> 20db853892c709a8ab009371106c6528bd84a154
 
+	if (format == NULL)
 
+		return (-1);
+
+<<<<<<< HEAD
         for (i = 0; format && format[i] != '\0'; i++)
+=======
+	va_start(list, format);
 
-        {
+	for (i = 0; format && format[i] != '\0'; i++)
+>>>>>>> 20db853892c709a8ab009371106c6528bd84a154
 
-                if (format[i] != '%')
+	{
 
-                {
+		if (format[i] != '%')
 
-                        buffer[buff_ind++] = format[i];
+	{
 
-                        if (buff_ind == BUFF_SIZE)
+			buffer[buff_ind++] = format[i];
 
-                                print_buffer(buffer, &buff_ind);
+			if (buff_ind == BUFF_SIZE)
 
-                        /* write(1, &format[i], 1);*/
+				print_buffer(buffer, &buff_ind);
 
-                        printed_chars++;
+			/* write(1, &format[i], 1);*/
 
-                }
+			printed_chars++;
 
-                else
+	}
 
-                {
+		else
 
-                        print_buffer(buffer, &buff_ind);
+		{
 
-                        flags = get_flags(format, &i);
+			print_buffer(buffer, &buff_ind);
 
-                        width = get_width(format, &i, list);
+			flags = get_flags(format, &i);
 
-                        precision = get_precision(format, &i, list);
+			width = get_width(format, &i, list);
 
-                        size = get_size(format, &i);
+			precision = get_precision(format, &i, list);
 
-                        ++i;
+			size = get_size(format, &i);
 
-                        printed = handle_print(format, &i, list, buffer,
+			++i;
 
-                                flags, width, precision, size);
+			printed = handle_print(format, &i, list, buffer,
 
-                        if (printed == -1)
+				flags, width, precision, size);
 
-                                return (-1);
+			if (printed == -1)
 
-                        printed_chars += printed;
+			return (-1);
 
-                }
+			printed_chars += printed;
 
-        }
+		}
 
+	}
 
-        print_buffer(buffer, &buff_ind);
+<<<<<<< HEAD
+=======
+	print_buffer(buffer, &buff_ind);
+>>>>>>> 20db853892c709a8ab009371106c6528bd84a154
 
+	va_end(list);
+
+<<<<<<< HEAD
 
         va_end(list);
 
@@ -97,6 +124,12 @@ int _printf(const char *format, ...)
 }
 
 
+=======
+	return (printed_chars);
+
+}
+
+>>>>>>> 20db853892c709a8ab009371106c6528bd84a154
 /**
 
  * print_buffer - Prints the contents of the buffer if it exist
@@ -111,11 +144,15 @@ void print_buffer(char buffer[], int *buff_ind)
 
 {
 
-        if (*buff_ind > 0)
+		if (*buff_ind > 0)
 
-                write(1, &buffer[0], *buff_ind);
-
+<<<<<<< HEAD
 
         *buff_ind = 0;
+=======
+		write(1, &buffer[0], *buff_ind);
+
+	*buff_ind = 0;
+>>>>>>> 20db853892c709a8ab009371106c6528bd84a154
 
 }
