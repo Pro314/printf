@@ -1,10 +1,13 @@
 #include "main.h"
 
-/* Function: get_flags
- * Description: Extracts formatting flags from the format string and returns the corresponding flag value.
+/*
+ * Function: get_flags
+ * Description: Extracts formatting flags from
+ * the format string and returns the corresponding flag value.
  * Parameters:
  *   - format: The format string.
- *   - i: Pointer to the current index in the format string (updated to the end of the flags).
+ *   - i: Pointer to the current index in
+ *  the format string (updated to the end of the flags).
  * Return: The combined flag value based on the encountered flags.
  */
 int get_flags(const char *format, int *i)

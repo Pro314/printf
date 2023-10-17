@@ -2,8 +2,10 @@
 
 /*<<<<<<<<<< PRINT CHAR >>>>>>>>>>*/
 
-/* Function: print_char
- * Description: Prints a character to the specified buffer based on the given arguments.
+/*
+ * Function: print_char
+ * Description: Prints a character to the specified buffer based
+ * on the given arguments.
  * Parameters:
  *   - types: A variable argument list.
  *   - buffer: The destination buffer for the printed character.
@@ -21,8 +23,10 @@ int print_char(va_list types, char buffer[],
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
 /*<<<<<<<<<< PRINT A STRING >>>>>>>>>>*/
-/* Function: print_string
- * Description: Prints a string to the specified buffer based on the given arguments.
+/*
+ * Function: print_string
+ * Description: Prints a string to the specified buffer
+ * based on the given arguments.
  * Parameters:
  *   - types: A variable argument list.
  *   - buffer: The destination buffer for the printed string.
@@ -77,11 +81,13 @@ int print_string(va_list types, char buffer[],
 	return (write(1, str, length));
 }
 /*<<<<<<<<<< PRINT PERCENT SIGN >>>>>>>>>>*/
-/* Function: print_percent
+/*
+ * Function: print_percent
  * Description: Prints the percent symbol to the specified buffer.
  * Parameters:
  *   - types: A variable argument list (not used in this function).
- *   - buffer: The destination buffer for the printed percent symbol (not used in this function).
+ *   - buffer: The destination buffer
+ * for the printed percent symbol (not used in this function).
  *   - flags: Flags for formatting (not used in this function).
  *   - width: Width for formatting (not used in this function).
  *   - precision: Precision for formatting (not used in this function).
@@ -100,8 +106,10 @@ int print_percent(va_list types, char buffer[],
 	return (write(1, "%%", 1));
 }
 /*<<<<<<<<<< PRINT INT >>>>>>>>>>*/
-/* Function: print_int
- * Description: Prints an integer to the specified buffer based on the given arguments.
+/*
+ * Function: print_int
+ * Description: Prints an integer to the specified buffer
+ * based on the given arguments.
  * Parameters:
  *   - types: A variable argument list.
  *   - buffer: The destination buffer for the printed integer.
@@ -145,8 +153,10 @@ int print_int(va_list types, char buffer[],
 }
 
 /*<<<<<<<<<< PRINT BINARY >>>>>>>>>>*/
-/* Function: print_binary
- * Description: Prints the binary representation of an unsigned integer to the standard output.
+/*
+ * Function: print_binary
+ * Description: Prints the binary representation
+ * of an unsigned integer to the standard output.
  * Parameters:
  *   - types: A variable argument list.
  *   - buffer: The destination buffer (not used in this function).
